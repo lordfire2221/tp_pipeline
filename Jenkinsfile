@@ -11,7 +11,7 @@ pipeline {
 
         stage('build') {
           steps {
-            sh '''cd tp_pipeline
+            sh '''cd /home/lordfire/tp_pipeline
 pandoc READEME.md -s -o .index.docx
 '''
           }
